@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "cypress": "latest",
+    "typescript": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": false
+    },
+    "stepDefinitions": [
+      "cypress/e2e/step_definitions/[filepath]/*.{js,ts}",
+      "cypress/e2e/common_step_definitions/*.{js,ts}"
+    ]
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "allure-commandline": "^2.30.0",
+    "allure-cypress": "^3.0.1",
+    "mocha": "^10.7.3",
+    "mocha-jenkins-reporter": "^0.4.8"
+  }
+}
